@@ -1,0 +1,13 @@
+name: worldlink
+version: 1.0
+main: cat.nyaa.worldlink.WorldLink
+depend: ['Multiverse-Core']
+authors: [Takaranoao]
+api-version: 1.13
+commands:
+  worldlink:
+permissions:
+  worldlink.link:
+    default: op
+  worldlink.unlink:
+    default: op 

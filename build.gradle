@@ -1,0 +1,24 @@
+plugins {
+    id 'java'
+}
+
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+ext.minecraftVersion = "1.13.2"
+
+repositories {
+    jcenter()
+    //mavenCentral()
+    maven {
+        name 'Spigot'
+        url 'https://hub.spigotmc.org/nexus/content/groups/public/'
+    }
+}
+
+dependencies {
+    compileOnly "org.spigotmc:spigot-api:$minecraftVersion-R0.1-SNAPSHOT"
+}
+compileJava {
+    options.compilerArgs += ["-Xlint:deprecation"]
+} 
